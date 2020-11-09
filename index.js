@@ -11,13 +11,13 @@ app.use(express.json());
 ////root
 app.get("/", CountryControllers.index);
 ////find
-app.get("/:name", CountryControllers.showCountry);
+app.get("/name", CountryControllers.showCountry);
 ////create
 app.post("/", CountryControllers.create);
 ////update
-app.put("/country/:name", CountryControllers.edit);
+app.put("/country/name", CountryControllers.edit);
 ////delete
-app.delete("/delete/:name", CountryControllers.delete);
+app.delete("/delete/name", CountryControllers.delete);
 
 
 
