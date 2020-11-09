@@ -15,13 +15,6 @@ module.exports = {
             })
     },
 
-    showCapital: (req, res) =>{
-        Country.find({capital: req.params.capital})
-            .then(country => {
-                res.json(country)
-            } )
-    },
-
     create: (req, res) => {
         console.log(req)
         Country.create(req.body)
