@@ -8,7 +8,7 @@ module.exports = {
             })
     },
 
-    findCountry: (req, res) => {
+    showCountry: (req, res) => {
         Country.find({ name: req.params.name })
             .then(country => {
                 res.json(country)

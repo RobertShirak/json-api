@@ -11,7 +11,7 @@ app.use(express.json());
 ////root
 app.get("/", CountryControllers.index);
 ////find
-app.get("/:name", CountryControllers.findCountry);
+app.get("/:name", CountryControllers.showCountry);
 ////create
 app.post("/", CountryControllers.create);
 ////update
