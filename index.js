@@ -13,6 +13,7 @@ app.use(express.json());
 app.get("/", CountryControllers.index);
 ////find
 app.get("/name", CountryControllers.showCountry);
+app.get("/name/capital", CountryControllers.showCapital);
 ////create
 app.post("/", CountryControllers.create);
 ////update
