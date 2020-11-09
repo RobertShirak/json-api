@@ -3,12 +3,11 @@ const app = express();
 const CountryControllers = require('./controllers/CountryControllers')
 const bodyParser = require('body-parser')
 const cors = require('cors');
-const { Router } = require("express");
 
 app.use(bodyParser.json())
 app.use(cors())
 app.use(express.json());
-app.use(Router());
+
 
 ////root
 app.get("/", CountryControllers.index);
